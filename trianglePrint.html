@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Segitiga Terbalik Rata Kiri Terbalik</title>
+  </head>
+  <body>
+    <script>
+      function trianglePrint(num) {
+        for (let i = num; i >= 1; i--) {
+          let tampung = "";
+          for (let j = 1; j <= i; j++) {
+            tampung += j;
+          }
+          console.log(tampung);
+        }
+      }
+
+      trianglePrint(10);
+    </script>
+  </body>
+</html>

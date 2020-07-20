@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 4 week 1 java script</title>
+  </head>
+  <body>
+    <script>
+      let data = {
+        id: 1,
+        name: "Leanne Graham",
+        username: "Bret",
+        email: "Sincere@april.biz",
+        hoby: "singing, cooking, dancing",
+        address: {
+          street: "Kulas Light",
+          suite: "Apt. 556",
+          city: "Gwenborough",
+          zipcode: "92998-3874",
+        },
+        phone: "1-770-736-8031 x56442",
+        website: "hildegard.org",
+      };
+
+      //   spread operator
+      const newData = { ...data };
+      newData.name = "Alan Ardiyanto";
+      newData.email = "alanark07@gmail.com";
+      newData.hoby = "bermain game, menonton film";
+
+      console.log(newData.name);
+      console.log(newData.email);
+      console.log(newData.hoby);
+
+      console.log("\n");
+
+      //   destructuring assigment
+      const { street, city } = data.address;
+      console.log(street);
+      console.log(city);
+    </script>
+  </body>
+</html>

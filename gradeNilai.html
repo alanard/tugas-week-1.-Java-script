@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Nilai</title>
+  </head>
+  <body>
+    <script>
+      const mtk = 70;
+      const ipa = 83;
+      const indo = 83.5;
+      const ing = 90;
+      let avg = (mtk + ipa + indo + ing) / 4;
+
+      if (avg <= 59) {
+        console.log("Rata Rata Nilai Anda Adalah :" + avg);
+        console.log("Dan grade nilai anda adalah : E");
+      } else if (avg <= 69) {
+        console.log("Rata Rata Nilai Anda Adalah :" + avg);
+        console.log("Dan grade nilai anda adalah : D");
+      } else if (avg <= 79) {
+        console.log("Rata Rata Nilai Anda Adalah :" + avg);
+        console.log("Dan grade nilai anda adalah : C");
+      } else if (avg <= 89) {
+        console.log("Rata Rata Nilai Anda Adalah :" + avg);
+        console.log("Dan grade nilai anda adalah : B");
+      } else if (avg <= 100) {
+        console.log("Rata Rata Nilai Anda Adalah :" + avg);
+        console.log("Dan grade nilai anda adalah : A");
+      } else {
+        console.log("Input tidak diketahui");
+      }
+    </script>
+  </body>
+</html>
